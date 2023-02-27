@@ -1,0 +1,151 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "people",
+    "displayName": "Person",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "additionalName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "affiliation": {
+      "type": "string"
+    },
+    "award": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "date",
+      "required": true
+    },
+    "birthPlace": {
+      "type": "string"
+    },
+    "deathDate": {
+      "type": "date"
+    },
+    "deathPlace": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "familyName": {
+      "type": "string"
+    },
+    "faxNumber": {
+      "type": "biginteger"
+    },
+    "givenName": {
+      "type": "string"
+    },
+    "taxID": {
+      "type": "biginteger"
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "vatID": {
+      "type": "biginteger"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "additionalType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "alternateName": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "description": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "disambiguatingDescription": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "identifier": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "mainEntityOfPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "name": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "potential_actions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "sameAs": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "subjectOf": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "urls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "performerIn": {
+      "type": "enumeration",
+      "enum": [
+        "BusinessEvent",
+        "ChildrensEvent",
+        "ComedyEvent",
+        "CourseInstance",
+        "DanceEvent",
+        "DeliveryEvent",
+        "EducationEvent",
+        "EventSeries",
+        "ExhibitionEvent",
+        "Festival",
+        "FoodEvent",
+        "Hackathon",
+        "LiteraryEvent",
+        "MusicEvent",
+        "PublicationEvent",
+        "SaleEvent",
+        "ScreeningEvent",
+        "SocialEvent",
+        "SportsEvent",
+        "TheaterEvent",
+        "VisualArtsEvent"
+      ]
+    }
+  }
+}

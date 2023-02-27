@@ -1,0 +1,328 @@
+{
+  "kind": "collectionType",
+  "collectionName": "things",
+  "info": {
+    "singularName": "thing",
+    "pluralName": "things",
+    "displayName": "Thing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "alternateName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "disambiguatingDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "sameAs": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "additionalType": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "Action",
+        "BioChemEntity",
+        "CreativeWork",
+        "Event",
+        "Intangible",
+        "MedicalEntity",
+        "Organization",
+        "Person",
+        "Place",
+        "Product",
+        "Taxon"
+      ],
+      "required": true
+    },
+    "identifier": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "required": true
+    },
+    "potentialAction": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "AchieveAction",
+        "AssessAction",
+        "ConsumeAction",
+        "ControlAction",
+        "CreateAction",
+        "FindAction",
+        "InteractAction",
+        "MoveAction",
+        "OrganizeAction",
+        "PlayAction",
+        "SearchAction",
+        "SeekToAction",
+        "SolveMathAction",
+        "TradeAction",
+        "TransferAction",
+        "UpdateAction"
+      ],
+      "required": true
+    },
+    "subjectOf": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "AmpStory",
+        "ArchiveComponent",
+        "Article",
+        "Atlas",
+        "Blog",
+        "Book",
+        "Chapter",
+        "Claim",
+        "Clip",
+        "Collection",
+        "ComicStory",
+        "Comment",
+        "Conversation",
+        "Course",
+        "CreativeWorkSeason",
+        "CreativeWorkSeries",
+        "DataCatalog",
+        "Dataset",
+        "DefinedTermSet",
+        "Diet",
+        "DigitalDocument",
+        "Drawing",
+        "EducationalOccupationalCredential",
+        "Episode",
+        "ExercisePlan",
+        "Game",
+        "Guide",
+        "HowTo",
+        "HowToDirection",
+        "HowToSection",
+        "HowToStep",
+        "HowToTip",
+        "HyperToc",
+        "HyperTocEntry",
+        "LearningResource",
+        "Legislation",
+        "Manuscript",
+        "Map",
+        "MathSolver",
+        "MediaObject",
+        "MediaReviewItem",
+        "Menu",
+        "MenuSection",
+        "Message",
+        "Movie",
+        "MusicComposition",
+        "MusicPlaylist",
+        "MusicRecording",
+        "Painting",
+        "Photograph",
+        "Play",
+        "Poster",
+        "PublicationIssue",
+        "PublicationVolume",
+        "Quotation",
+        "Review",
+        "Sculpture",
+        "SheetMusic",
+        "ShortStory",
+        "SoftwareApplication",
+        "SoftwareSourceCode",
+        "SpecialAnnouncement",
+        "Statement",
+        "TVSeason",
+        "TVSeries",
+        "Thesis",
+        "VisualArtwork",
+        "WebContent",
+        "WebPage",
+        "WebPageElement",
+        "WebSite",
+        "BusinessEvent",
+        "ChildrensEvent",
+        "ComedyEvent",
+        "CourseInstance",
+        "DanceEvent",
+        "DeliveryEvent",
+        "EducationEvent",
+        "EventSeries",
+        "ExhibitionEvent",
+        "Festival",
+        "FoodEvent",
+        "Hackathon",
+        "LiteraryEvent",
+        "MusicEvent",
+        "PublicationEvent",
+        "SaleEvent",
+        "ScreeningEvent",
+        "SocialEvent",
+        "SportsEvent",
+        "TheaterEvent",
+        "VisualArtsEvent"
+      ]
+    },
+    "mainEntityOfPage": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "AmpStory",
+        "ArchiveComponent",
+        "Article",
+        "Atlas",
+        "Blog",
+        "Book",
+        "Chapter",
+        "Claim",
+        "Clip",
+        "Collection",
+        "ComicStory",
+        "Comment",
+        "Conversation",
+        "Course",
+        "CreativeWorkSeason",
+        "CreativeWorkSeries",
+        "DataCatalog",
+        "Dataset",
+        "DefinedTermSet",
+        "Diet",
+        "DigitalDocument",
+        "Drawing",
+        "EducationalOccupationalCredential",
+        "Episode",
+        "ExercisePlan",
+        "Game",
+        "Guide",
+        "HowTo",
+        "HowToDirection",
+        "HowToSection",
+        "HowToStep",
+        "HowToTip",
+        "HyperToc",
+        "HyperTocEntry",
+        "LearningResource",
+        "Legislation",
+        "Manuscript",
+        "Map",
+        "MathSolver",
+        "MediaObject",
+        "MediaReviewItem",
+        "Menu",
+        "MenuSection",
+        "Message",
+        "Movie",
+        "MusicComposition",
+        "MusicPlaylist",
+        "MusicRecording",
+        "Painting",
+        "Photograph",
+        "Play",
+        "Poster",
+        "PublicationIssue",
+        "PublicationVolume",
+        "Quotation",
+        "Review",
+        "Sculpture",
+        "SheetMusic",
+        "ShortStory",
+        "SoftwareApplication",
+        "SoftwareSourceCode",
+        "SpecialAnnouncement",
+        "Statement",
+        "TVSeason",
+        "TVSeries",
+        "Thesis",
+        "VisualArtwork",
+        "WebContent",
+        "WebPage",
+        "WebPageElement",
+        "WebSite"
+      ]
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    }
+  }
+}

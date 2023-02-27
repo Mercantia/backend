@@ -1,0 +1,211 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "singularName": "organization",
+    "pluralName": "organizations",
+    "displayName": "Organization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "alumni": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::person.person"
+    },
+    "areaServed": {
+      "type": "string"
+    },
+    "award": {
+      "type": "string"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organization.organization",
+      "inversedBy": "organizations"
+    },
+    "organizations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organization.organization",
+      "inversedBy": "departments"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organization.organization",
+      "inversedBy": "organizations"
+    },
+    "dissolutionDate": {
+      "type": "date"
+    },
+    "duns": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::person.person"
+    },
+    "faxNumber": {
+      "type": "biginteger"
+    },
+    "people": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::person.person"
+    },
+    "foundingDate": {
+      "type": "date",
+      "required": true
+    },
+    "foundingLocation": {
+      "type": "string",
+      "required": true
+    },
+    "funders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization"
+    },
+    "globalLocationNumber": {
+      "type": "biginteger"
+    },
+    "legalName": {
+      "type": "string",
+      "required": true
+    },
+    "leiCode": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization",
+      "mappedBy": "organization"
+    },
+    "organization": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organization.organization",
+      "inversedBy": "parentOrganization"
+    },
+    "naics": {
+      "type": "string"
+    },
+    "numberOfEmployees": {
+      "type": "integer"
+    },
+    "parentOrganization": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization",
+      "mappedBy": "organization"
+    },
+    "slogan": {
+      "type": "richtext"
+    },
+    "sponsors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization"
+    },
+    "subOrganization": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::organization.organization"
+    },
+    "taxID": {
+      "type": "string",
+      "required": true
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "vatID": {
+      "type": "string"
+    },
+    "additionalType": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "alternateName": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "description": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "disambiguatingDescription": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "identifier": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "mainEntityOfPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "name": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    },
+    "potentialAction": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "sameAs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "subjectOf": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thing.thing"
+    },
+    "url": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::thing.thing"
+    }
+  }
+}
